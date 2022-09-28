@@ -15,6 +15,7 @@ ${Browser_Name}  ${TestData}[Browser]
 ${Environment}      ${TestData}[Environment]
 ${TimeOut}      60s
 ${Start}        1s
+${SCREENSHOT_LOC}  ${TestData}[SCREENSHOT_LOC]
 
 *** Keywords ***
 
@@ -40,7 +41,7 @@ Execute Suite Setup as ${user}
     [Documentation]     Open Browser on Test or preproduction environment
      Login SIM For Things as ${user}
      Verify user is able to login application as ${user}
-     Verify BICS Dashboard
+     #Verify BICS Dashboard
 Open ${Browser} on ${Environment}
     [Documentation]     Open broswer based on Browser variable and environemnt.
         run keyword if    '${Browser_Name}' == 'chrome' or '${Browser_Name}' == 'headlesschrome'
@@ -259,3 +260,33 @@ Set Dropdown5
         Click Item  //option[text()='${Month}']
         #Click Item   //div[@aria-disabled='false' and text()='${locator_div}']
     END
+
+
+TakePic
+    [Arguments]     ${picname}
+
+    capture page screenshot  ${SCREENSHOT_LOC}/${picname}
+
+Set Accordian
+    [Arguments]     ${WEEKDAY}  ${len}
+
+    FOR  ${index}  IN RANGE  0  ${len}-1
+            #Log To Console  ${len}
+            ${Value}=  List Value  ${WEEKDAY}  ${index}
+            Log To Console  ${Value}
+            Click Item  //div[contains(text(),'${Value}')]
+            Sleep  5s
+    END
+
+
+Set TextArea
+    [Arguments]     ${locator}  ${value}
+
+    #wait until element is visible    ${locator}
+    #Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      click element      ${locator}
+
+    Click Item  ${locator}
+
+    Run Keyword If  '${value}' == 'nan'  Log To Console  NANACONDITION
+    ...  ELSE IF  '${value}' == 'BLANK'  Wait Until Keyword Succeeds    ${TimeOut}      ${Start}  SeleniumLibrary.Input Text     ${locator}  \
+    ...  ELSE  Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      input value on text fields         ${locator}     ${value}

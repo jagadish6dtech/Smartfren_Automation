@@ -58,6 +58,7 @@ WKD :
     PINDigit6: "//input[@aria-label='Digit 6']"
     ConfirmButton: "//div[text()=' Confirm']"
 
+
   Outlet Onborading:
     Channel Partner: "//span[normalize-space()='Channel Partner']"
     OutletManagement: "//a[normalize-space()='Outlet Mangement']"
@@ -137,6 +138,9 @@ WKD :
     CreateSalesForceMbooklet: "//div[contains(@class,'btn-md float-right margin-left')]"
     TagDropdown: "//div[contains(@class,'select-form__value-container select-form__value-container--is-multi css-1d8n9bt')]//div[contains(@class,'select-form__input-container css-ackcql')]"
 
+  ADD_REFERENCE_KEY:
+    Apps: "//div/span[text()='Apps']"
+    DMS: "//button/span[text()='DMS']"
 
 
 
