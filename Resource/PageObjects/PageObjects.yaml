@@ -1,0 +1,166 @@
+WKD :
+  LoginPage:
+    welcomenote :
+    UserName: "//input[@autocomplete='new-username']"
+    Password: "//input[@class='form-control']"
+    NextButton: "//button[text()='Next']"
+    UserLogo: "//a[@class='mx-auto nav-link']"
+    Loginbtn: "//button[text()='Login']"
+    Logout: "//a[text()='Logout']"
+
+
+  DashBoard:
+    Apps: "//div/span[text()='Apps']"
+
+
+  SSOPage:
+    nms: "//div[@class='db-product-card'][7]"
+    crm: "//div[@class='db-product-card'][2]"
+    upc: "//div[@class='db-product-card'][11]"
+
+  ISIPulsaDetailsPage:
+    Apps: "//div/span[text()='Apps']"
+    POSApp: "//button/span[text()='POS']"
+    ISIPulsa: "//a[normalize-space()='ISI Pulsa']"
+    InputMDN: "//input[@id='mdn__id']"
+    InputMDNProceedButton: "//div[text()=' Proceed']"
+    InputRPValue: "//input[@id='denom__id']"
+    RPValueAddButton: "//div[text()=' Add']"
+    PaymentTypeDropdown: "//div[@class='css-1pcexqc-container Select']"
+    FinalProccedButton: "(//div[text()=' Proceed'])[2]"
+    PINDigit1: "//input[@aria-label='Please enter verification code. Digit 1']"
+    PINDigit2: "//input[@aria-label='Digit 2']"
+    PINDigit3: "//input[@aria-label='Digit 3']"
+    PINDigit4: "//input[@aria-label='Digit 4']"
+    PINDigit5: "//input[@aria-label='Digit 5']"
+    PINDigit6: "//input[@aria-label='Digit 6']"
+    ConfirmButton: "//div[text()=' Confirm']"
+    TranscationOk: "//div[contains(@class,'btn-md float-center margin-left')]"
+    TranscationId: "//div[contains(text(), '12048')]"
+    TranscationIdText: "//div[normalize-space()='Transaction ID']"
+    TranscationSuccessfulltext: "//div[contains(text(),'Transaction Successful')]"
+
+  BeliPacketDetailsPage:
+    Apps: "//div/span[text()='Apps']"
+    POSApp: "//button/span[text()='POS']"
+    Search: "//input[@placeholder='Search']"
+    BeliPaket: "//img[contains(@src,'/sfdms/images/menus/beliPaket.svg')]"
+    InputMDN: "//input[@id='mdn__id']"
+    InputMDNProceedButton: "//div[text()=' Proceed']"
+    SearchPackage: "//input[@id='searchValue__id']"
+    PaymentTypeDropdown: "//div[@class='css-1pcexqc-container Select']"
+    FinalProccedButton: "(//div[text()=' Proceed'])[2]"
+    PINDigit1: "//input[@aria-label='Please enter verification code. Digit 1']"
+    PINDigit2: "//input[@aria-label='Digit 2']"
+    PINDigit3: "//input[@aria-label='Digit 3']"
+    PINDigit4: "//input[@aria-label='Digit 4']"
+    PINDigit5: "//input[@aria-label='Digit 5']"
+    PINDigit6: "//input[@aria-label='Digit 6']"
+    ConfirmButton: "//div[text()=' Confirm']"
+
+  Outlet Onborading:
+    Channel Partner: "//span[normalize-space()='Channel Partner']"
+    OutletManagement: "//a[normalize-space()='Outlet Mangement']"
+    CreateOutlet: "//div[contains(@class,'btn-md float-right margin-left')]"
+    OutletAddress: "//textarea[@id='address__id']"
+    OutletName: "//input[@id='entityName__id']"
+    NextButton: "//div[normalize-space()='Next']"
+    ProductType: "(//div[@class='css-151xaom-placeholder Select__placeholder'])[1]"
+    ProductFocus1: "(//div[@class='css-1hwfws3 Select__value-container Select__value-container--is-multi'])[1]/*[1]"
+    ProductFocus2: "(//div[@class='css-1hwfws3 Select__value-container Select__value-container--is-multi Select__value-container--has-value'])[1]"
+    ProductFocus3: "//div[@class='css-1hwfws3 Select__value-container Select__value-container--is-multi Select__value-container--has-value']"
+    PhotoOfOutlet: "(//span[normalize-space()='Browse'])[1]"
+    FileUpload: "//input[@name='photoOutlet_']"
+
+
+  Approval Workflow:
+    Approvals: "//span[normalize-space()='Approvals']"
+    AppovalWorkFlow: "//a[normalize-space()='Approval Workflow']"
+    CreateApprovalWorkFlow: "//div[contains(@class,'btn-md float-right margin-left')]"
+    EventDropdown: "//div[@class='css-151xaom-placeholder Select__placeholder']"
+    DurationDropdown: "//div[contains(text(),'Duration')]"
+    ApprovalHeirachy: "//div[contains(text(),'Every One')]"
+    IntiatorNo: "//div[contains(text(),'No')]"
+    AddLevel: "//p[@class='level-count mb-0 add-level']"
+    AddApprover: "//p[@class='add-approvar-btn float-right my-0 mr-0 ml-auto d-flex justify-content-center align-items-center']"
+    AppoverListDropdown: "//div[contains(@class,'channel-type col-md-12')]//div[contains(@class,'css-151xaom-placeholder Select__placeholder')][normalize-space()='Select']"
+    ApprovalListNextButton: "//div[contains(@class,'btn-md float-center margin-left')]"
+    OperatorLevel: "//div[contains(text(),'Operator')]"
+    DesignationDropdown: "//div[contains(@class,'channel-type p-0 col-md-4')]//div[contains(@class,'css-1hwfws3 Select__value-container')]"
+    DesignationTypeReportingDesignation: "//div[contains(text(),'Reporting Designaton')]"
+    DesignationAddButton: "//div[normalize-space()='Add']"
+    CreateButton: "//div[normalize-space()='Create']"
+    
+  Geographical Territory:
+    SalesStructure: "//span[normalize-space()='Sales Structure']"
+    Geographicalterritory: "//a[normalize-space()='Geographical Territory']"
+    PlusIcon: "//i[@class='fa fa-plus']"
+    Province: "//input[@id='nodeName__id']"
+    SaveButton: "//div[normalize-space()='Save']"
+    ThreeDotButton: "(//i[@class='fa fa-ellipsis-h'])[5]"
+    CreateButton: "(//button[text()='Create'])[1]"
+    DistrictInput: "//input[@id='nodeName__id']"
+    DistrictApprovalSentToastMessage: "//div[starts-with(text(),'District:KIHSO send for approval successfully !')]"
+    UserInfoButton: "//i[@class='icon-user_circle user-avatar-icon']"
+    SignoutButton: "//i[@class='icon-user_circle user-avatar-icon']"
+    
+  ApprovalTask:
+    Approvals: "//span[normalize-space()='Approvals']"
+    MyTasks: "//a[normalize-space()='My Tasks']"
+    ViewButton: "(//img)[8]"
+    ViewButton2: "(//img[@src='/sfdms/images/view.svg'])[1]"
+    ApproveButton: "//div[text()=' Approve']"
+    ApprovalTextarea: "//textarea[@id='rejectMessage__id']"
+    ApprovalConfirmButton: "//div[text()=' Confirm']"
+    ApprovalPOPUPMessage: "//div[text()='Request has been approved! ']"
+    ProvinceValue: "//input[@id='nodeName__id']"
+    MenuBar: "//span[text()='Menu']"
+
+  MbookletConfiguration:
+    MbookletConfiguration: "//span[normalize-space()='Mbooklet Configuration']"
+    MbookletType: "//a[normalize-space()='Mbooklet Type']"
+    CreateMbookletTypeButton: "//div[contains(@class,'btn-md float-right margin-left')]"
+    MbookletTemplateDropdown: "//div[@class='select-form__input-container css-ackcql']"
+    MbookletTypeName: "//input[@id='filed_mbookletTypeName']"
+    AddMbookletButton: "//div[normalize-space()='Add']"
+    MbookletTypeEditButton: "//tbody/tr[1]/td[4]/img[1]"
+    UpdateMbooklettype: "//div[normalize-space()='Update']"
+    KMSApp: "//span[normalize-space()='KMS']"
+    SearchButton: "//button[contains(@type,'button')]//i[contains(@class,'fa fa-search')]"
+    MbookletTypeSearchButton: "//input[contains(@class,'data-Table-common_search form-control-sm form-control')]"
+    PopUpmessageCreateMbooklet: "//div[text()='Successfully added mbooklet type']"
+    PopUpmessageUpdateMbooklet: "//div[text()='Successfully updated mbooklet type']"
+    SalesForceMbooklet: "//a[normalize-space()='Sales force Mbooklet']"
+
+  SalesForceMbooklet:
+    MBookletTypeDropdown: "//div[contains(@class,'select-form__value-container select-form__value-container--has-value css-1d8n9bt')]//div[contains(@class,'select-form__input-container css-ackcql')]"
+    CreateSalesForceMbooklet: "//div[contains(@class,'btn-md float-right margin-left')]"
+    TagDropdown: "//div[contains(@class,'select-form__value-container select-form__value-container--is-multi css-1d8n9bt')]//div[contains(@class,'select-form__input-container css-ackcql')]"
+
+
+
+
+
+
+
+
+    
+
+    
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+TestData:
+  URL: 'https://sfprotest.smartfren.com/sfdms'
+  Browser: 'chrome'
+  Environment : 'localtestbed'
+  USER:
+    nms_user:
+      username: 'nmsadmin'
+      password: 'Nmsadmin@123'
+    SmartFern_user:
+      username1: '2004'
+      password1: '873467'
+      
+      username2: '1015'
+      password2: '945789'
+      
+      username3: '1009'
+      password3: '873467' 
+      
+      username4: '2000'
+      password4: '873467'
+
+      username5: '1014'
+      password5: '873569'
+      
+      username6: '2003'
+      password6: '873467'
+      
+    upc_user:
+      username: 'upcmaintainer'
+      password: 'Upcmaintainer@123'
+  CRM_TestData: D:/Repositories2/sf_auto_07072022/sf_auto_07072022/Resource/TestData/CRMTestdata.xlsx
+  UPC_TestData: C:/Users/abhishek.jayalal/Desktop/Wakanda_automation/Resource/TestData/NMSTestdata.xlsx
+  NMS_TestData: C:/Users/abhishek.jayalal/Desktop/Wakanda_automation/Resource/TestData/UPCTestdata.xlsx
+  WKD_CRM_TESTDATA: C:/Users/abhishek.jayalal/Desktop/Wakanda/20-06-2022/wkd_auto-20-06-2022/Resource/TestData/WKD_DATAPOOL.xlsx
+  SMARTFREN_TESTDATA: D:/Repositories2/sf_auto_07072022/sf_auto_07072022/Resource/TestData/SMARTFREN_DATAPOOL.xlsx
+  CRM_ADDRESS_DATA:
+  OrderDetail:
+    orderId: '1234567'
